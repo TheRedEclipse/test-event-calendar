@@ -77,7 +77,7 @@ class AuthService
             'success' => true,
             'access_token' => $token,
             'token_type' => 'bearer',
-            'expires_in' => auth()->factory()->getTTL() * 1,
+            'expires_in' => auth()->factory()->getTTL() * 90000000,
             'user' => auth()->user()
         ]);
     }
