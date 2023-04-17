@@ -1,4 +1,4 @@
-## Test work with functionality pf Event Calendar and relation to Departments and Users with crud
+## Test work with functionality of Event Calendar and relation to Departments and Users with crud
 
 
 To start test work perfom:
