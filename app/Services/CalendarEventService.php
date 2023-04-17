@@ -14,7 +14,7 @@ class CalendarEventService
     }
 
     /**
-     * Return list of User model
+     * Return list of CalendarEvent model
      *
      * @return mixed
      */
@@ -38,7 +38,7 @@ class CalendarEventService
     }
 
     /**
-     * Store a newly created User in storage.
+     * Store a newly created CalendarEvent in storage.
      *
      * @param  object $request
      * @return object
@@ -49,7 +49,7 @@ class CalendarEventService
     }
 
     /**
-     * Show the specified User in storage.
+     * Show the specified CalendarEvent in storage.
      *
      * @param  int  $id
      * @return object

@@ -2,6 +2,7 @@ import axios from 'axios';
 import { useToast } from "vue-toastification";
 import { camelizeKeys, decamelizeKeys } from 'humps';
 import router from './router'
+import store from  './store'
 
 const $axios = axios.create({
     baseURL: `/api/`,
@@ -61,9 +62,12 @@ $axios.interceptors.response.use(
             error.response.status === 401
         ) {
             $toast.error('Сессия истекла')
-            this.$store.commit('logout')
+
+            store.commit('logout')
+
             router.push('/sign-in')
-            this.$cookies.remove('token')
+            
+            cookies.remove('token')
             return Promise.reject(error)
         }
 

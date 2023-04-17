@@ -17,8 +17,6 @@
         </template>
         <template v-else>
          <router-link  :to="{ name: 'signIn' }">Войти</router-link>
-          <a href="/registration"> Регистрация </a>
-       
         </template>
     </span>
         <h5 class="text-center p-2">навигация</h5>
