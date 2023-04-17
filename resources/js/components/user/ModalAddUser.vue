@@ -69,7 +69,7 @@
       if (!data) {
         this.user.username = null;
         this.user.password = null;
-        this.user.userRoleId = null;
+        this.user.userRoleId = 2;
         this.user.department = null;
       }
     },

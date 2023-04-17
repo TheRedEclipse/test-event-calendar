@@ -56,7 +56,7 @@ class CalendarEvent extends Model
 
         $mergedUsers = array_merge($request->users, $users);
 
-        $removedUserDuplicates = array_map("unserialize", array_unique(array_map("serialize", $mergedUsers)));
+        $removedUserDuplicates = array_unique($mergedUsers, SORT_REGULAR);
 
         foreach ($removedUserDuplicates as $user) {
             ModelHasCalendarEvent::create([
